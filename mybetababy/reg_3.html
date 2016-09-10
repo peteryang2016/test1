@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=no"/> 
+<meta name="format-detection" content="telephone=no"/>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>Mybetababy - Mobile - reg_3</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+<script type="text/javascript" src="js/TouchNav.js"></script>
+<script language="javascript" src=""></script>
+
+
+</head>
+
+<body>
+
+<!-- 顶部开始 -->
+<div class="topline" id="topnav"><img src="images/logo.png"/>
+
+					<!-- 左侧图标 -->
+                    <div class="leftmenu" id="menul" onclick="show('lmenu')">
+                    
+                                          <ul class="MenulList" id="lmenu">
+                                          <li class="litopline"><a href="index.html">首页</a></li>
+                                          <li><a href="productlist.html">一层蛋糕</a></li>
+                                          <li><a href="#">二层蛋糕</a></li>
+                                          <li><a href="#">三层蛋糕</a></li>
+                                          <li><a href="#">花束</a></li>
+                                          <li><a href="#">礼篮</a></li>
+                                          <li><a href="#">配件礼盒</a></li>
+                                          <li class="libottomline"><a href="brandstory.html">品牌故事</a></li>
+                                          </ul>
+                                         
+                    </div>                      
+
+
+					<!-- 右侧图标 -->
+                    <div class="rightmenu" id="menur" onclick="show('rmenu')">
+                    
+                                          <ul class="MenurList" id="rmenu">
+                                          <li><img src="images/ico1.png"/><a href="shoppingcart.html">购物车（1）</a></li>
+                                          <li><img src="images/ico2.png"/><a href="myorder.html">个人中心</a></li>
+                                          <li><img src="images/ico3.png"/><a href="login.html">登录</a></li>
+                                          <li><img src="images/ico4.png"/><a href="shoppingcart.html">帐户</a></li>
+                                          </ul>
+
+                    </div>  
+                    
+<script type="text/javascript">
+function show(obj){
+var obj=document.getElementById(obj); //获得id为menu的容器
+//如果下面的内容显示的话就隐藏
+if(obj.style.display=="block"){
+obj.style.display="none";
+}else 
+obj.style.display="block";
+}	
+</script>     
+
+
+
+<script>
+
+$().ready(function(){
+    //导航距离屏幕顶部距离
+    var _defautlTop = $("#topnav").offset().top;//
+    //导航距离屏幕左侧距离
+    var _defautlLeft = $("#topnav").offset().left;
+    //导航默认样式记录，还原初始样式时候需要
+    var _position = $("#topnav").css('position');
+    var _top = $("#topnav").css('top');
+    var _left = $("#topnav").css('left');
+    var _zIndex = $("#topnav").css('z-index');
+    //鼠标滚动事件
+    $(window).scroll(function(){
+        if($(this).scrollTop() > _defautlTop){
+            //IE6不认识position:fixed，单独用position:absolute模拟
+            if($.browser.msie && $.browser.version=="6.0"){
+                $("#top").css({'position':'absolute','top':eval(document.documentElement.scrollTop),'left':_defautlLeft,'z-index':99999});
+                //防止出现抖动
+                $("html,body").css({'background-image':'url(about:blank)','background-attachment':'fixed'});
+            }else{
+                $("#topnav").css({'position':'fixed','top':0,'left':_defautlLeft,'z-index':99999});
+            }
+        }else{
+            $("#topnav").css({'position':_position,'top':_top,'left':_left,'z-index':_zIndex});
+        }
+    });
+});
+</script>
+</div>
+
+<!-- 顶部结束 -->
+
+
+<!-- 横向导航 -->
+<div style="height:50px;"></div>
+
+<div class="navall">
+<div class="page">
+    <div class="nav" id="nav">
+    <ul>
+    <li class="active"><a href="login.html">登录注册</a></li>
+    <li><a href="#">购物车</a></li>
+    <li><a href="#">订单</a></li>
+    <li><a href="#">积分</a></li>
+    <li><a href="#">优惠券</a></li>
+    <li><a href="#">礼品卡</a></li>
+    <li><a href="#">个人信息</a></li>
+    <li><a href="#">修改密码</a></li>
+    </ul>
+    </div>
+</div>
+
+</div>
+
+<script>
+//开始调用插件
+var slider=new Swipe(document.getElementById('nav'),{speed:500,auto:0,width:75,col:4});
+</script>
+
+<!-- 横向导航 -->
+
+
+
+<!-- 内容 -->
+<div class="loginr">
+
+	<p style="font-size:16px;">注册</p>
+    <p><img src="images/reg3.jpg" style="width:100%;"/></p>
+    <br/>
+    <p style="text-align:center;">恭喜您，注册成功 √。<br/>5秒后自动跳转到首页。</p>
+    <br/>
+    <p><input name="" type="button" class="loginbtn" value="返  回"  onclick="window.location.href='index.html'" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</div>
+
+
+
+<!-- footer Start ================================ -->
+<div class="footer">
+<div style="color:#EF596D;"><img src="images/tel.png"  style="width:4%;"/>蛋糕订购：4000-000-000</div>
+<div style="font-size:9px;padding-top:10px;">版权所有：copyright@mybetababy.com<br/>京ICP备11017824号-4 / 京ICP证130164号</div>
+</div>
+<!-- footer End ================================ -->
+
+</body>
+</html>

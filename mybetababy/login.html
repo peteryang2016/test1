@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=no"/> 
+<meta name="format-detection" content="telephone=no"/>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>会员登录</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="images/animated_favicon.gif" type="image/gif" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+<script type="text/javascript" src="js/TouchNav.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<!-- 顶部开始 -->
+<div class="topline" id="topnav"><img src="images/logo.png"/>
+    <!-- 左侧图标 -->
+    <div class="leftmenu" id="menul" onclick="show('lmenu')">
+      <ul class="MenulList" id="lmenu">
+          <li class="litopline"><a href="index.html">首页</a></li>
+          <li><a href="productlist.html">一层蛋糕</a></li>
+          <li><a href="#">二层蛋糕</a></li>
+          <li><a href="#">三层蛋糕</a></li>
+          <li><a href="#">花束</a></li>
+          <li><a href="#">礼篮</a></li>
+          <li><a href="#">配件礼盒</a></li>
+          <li class="libottomline"><a href="brandstory.html">品牌故事</a></li>
+      </ul>
+    </div>                      
+    
+    <!-- 右侧图标 -->
+    <div class="rightmenu" id="menur" onclick="show('rmenu')">
+        <ul class="MenurList" id="rmenu">
+        <li><img src="images/ico1.png"/><a href="shoppingcart.html">购物车（1）</a></li>
+        <li><img src="images/ico2.png"/><a href="myorder.html">个人中心</a></li>
+        <li><img src="images/ico3.png"/><a href="login.html">登录</a></li>
+            <li><img src="images/ico4.png"/><a href="shoppingcart.html">帐户</a></li>
+            </ul>
+        </div>  
+</div>
+
+<!-- 顶部结束 -->
+<!-- 横向导航 -->
+<div style="height:50px;"></div>
+<div class="navall">
+    <div class="page">
+        <div class="nav" id="nav">
+            <ul>
+            <li  class="active"><a href="login.html">登录注册</a></li>
+            <li><a href="shoppingcart.html">购物车</a></li>
+            <li><a href="myorder.html">订单</a></li>
+            <li><a href="jifen.html">积分</a></li>
+            <li><a href="youhuiquan.html">优惠券</a></li>
+            <li><a href="info.html">个人信息</a></li>
+            <li><a href="password.html">修改密码</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+//开始调用插件
+var slider=new Swipe(document.getElementById('nav'),{speed:500,auto:0,width:75,col:4});
+</script>
+<!-- 横向导航 -->
+<!-- 内容 -->
+<div class="loginr">
+	<p style="font-size:16px;">登录</p>
+    <p>用户名：</p>
+    <p><input name="" type="text" class="inputtext" /></p>
+    <p>密码：<span style="float:right"><a href="#"><font color="#F26B7C">忘记密码？</font></a></span></p>
+    <p><input name="" type="password" class="loginpassword" /></p>
+    <p><input name="" type="checkbox" value=""  checked="checked"/>保持登录状态</p>
+    <p><input name="" type="button" class="loginbtn" value="登  录" /></p>
+    <br/>
+    <p><input name="" type="button" class="regbtn" value="注  册"  onclick="window.location.href='reg_1.html'"/></p>
+</div>
+<!-- footer Start-->
+<div class="footer">
+    <div class="tel">
+    	<img src="images/tel.png">
+        蛋糕订购：4000-000-000
+    </div>
+	<div class="bq">版权所有：copyright@mybetababy.com<br/>京ICP备11017824号-4 / 京ICP证130164号
+    </div>
+</div>
+<!-- footer End -->
+
+</body>
+</html>

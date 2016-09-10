@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=no"/> 
+<meta name="format-detection" content="telephone=no"/>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>购物车</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="images/animated_favicon.gif" type="image/gif" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+<script type="text/javascript" src="js/TouchNav.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+<!-- 顶部开始 -->
+<div class="topline" id="topnav"><img src="images/logo.png"/>
+    <!-- 左侧图标 -->
+    <div class="leftmenu" id="menul" onclick="show('lmenu')">
+        <ul class="MenulList" id="lmenu">
+            <li class="litopline"><a href="index.html">首页</a></li>
+            <li><a href="productlist.html">一层蛋糕</a></li>
+            <li><a href="#">二层蛋糕</a></li>
+            <li><a href="#">三层蛋糕</a></li>
+            <li><a href="#">花束</a></li>
+            <li><a href="#">礼篮</a></li>
+            <li><a href="#">配件礼盒</a></li>
+            <li class="libottomline"><a href="brandstory.html">品牌故事</a></li>
+        </ul>
+    </div>                      
+    <!-- 右侧图标 -->
+    <div class="rightmenu" id="menur" onclick="show('rmenu')">
+        <ul class="MenurList" id="rmenu">
+            <li><img src="images/ico1.png"/><a href="shoppingcart.html">购物车（1）</a></li>
+            <li><img src="images/ico2.png"/><a href="myorder.html">个人中心</a></li>
+            <li><img src="images/ico3.png"/><a href="login.html">登录</a></li>
+            <li><img src="images/ico4.png"/><a href="shoppingcart.html">帐户</a></li>
+        </ul>
+    </div>  
+</div>
+<!-- 顶部结束 -->
+<!-- 横向导航 -->
+<div style="height:50px;"></div>
+<div class="navall">
+    <div class="page">
+        <div class="nav" id="nav">
+            <ul>
+                <li><a href="login.html">登录注册</a></li>
+                <li  class="active"><a href="shoppingcart.html">购物车</a></li>
+                <li><a href="myorder.html">订单</a></li>
+                <li><a href="jifen.html">积分</a></li>
+                <li><a href="youhuiquan.html">优惠券</a></li>
+                <li><a href="info.html">个人信息</a></li>
+                <li><a href="password.html">修改密码</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+//开始调用插件
+var slider=new Swipe(document.getElementById('nav'),{speed:500,auto:0,width:75,col:4});
+</script>
+<!-- 横向导航 -->
+<!-- 内容 -->
+<div class="myordernr">
+<div class="yhqline">产品</div>
+<table width="92%" border="0" align="center" class="shoppingcartab">
+  <tr>
+    <td style="width:75px;"><a href="product.html"><img src="images/shoppingcart-1.jpg" style="width:75px;" /></a></td>
+    <td style="width:10px;">&nbsp;</td>
+    <td valign="middle">
+    <p style="font-size:14px;">甜美睡梦</p>
+    <br/>
+    <p style="font-size:10px;">颜色：浅粉色<br/>年龄：0-3</p>
+    </td>
+    <td valign="middle" style="width:100px; text-align:right;">单价：￥799 &nbsp;<img src="images/delete.png" style="width:14px;" /></td>
+  </tr>
+</table>
+
+<table width="92%" border="0" align="center" class="shoppingcartab">
+  <tr>
+    <td style="width:75px;"><a href="product.html"><img src="images/shoppingcart-1.jpg" style="width:75px;" /></a></td>
+    <td style="width:10px;">&nbsp;</td>
+    <td valign="middle">
+    <p style="font-size:14px;">甜美睡梦</p>
+    <br/>
+    <p style="font-size:10px;">颜色：浅粉色<br/>年龄：0-3</p>
+    </td>
+    <td valign="middle" style="width:100px; text-align:right;">单价：￥799 &nbsp;<img src="images/delete.png" style="width:14px;"  /></td>
+  </tr>
+</table>
+
+<div class="yhqline">应付金额：￥899<span style=" position:absolute;right:10px;"><a href="#">返回继续选购</a></span></div>
+<br/>
+<div><input name="" type="text" class="spcartdh" value=" 请输入兑换码" />&nbsp;&nbsp;<input name="" type="button"  class="bluebtn" value="兑  换"/></div>
+<br/>
+<div style="font-size:14px;color:#555;">选择收货地址<span style="font-size:10px;margin-left:40px;"><a href="#"><font color="F59799">管理地址</font></a></span></div>
+		<div class="spcartshdz">
+        收货人：
+        <br/>收货地址：常营民族家园56号楼 北京市朝阳区常营民族家园L区56号楼
+        <br/>门牌号：
+        </div>
+<div style="font-size:14px;color:#555;padding-top:10px;padding-bottom:10px;border-bottom:1px solid #ddd;">填写订单信息</div>
+<p>&nbsp;</p>
+<p>是否自提：</p>
+<p><select name="" class="spcart_select">
+    <option>是</option>
+    <option>否</option>
+    </select></p>
+<p>&nbsp;</p>
+<p>收货地址：</p>
+<p><input name="" type="text" class="spcart_txt"/></p>
+<p>&nbsp;</p>
+<p>门牌号：</p>
+<p><input name="" type="text" class="spcart_txt"/></p>
+<p>&nbsp;</p>
+<p>收货日期：</p>
+<p><input name="" type="text" class="spcart_txt"/></p>
+<p>&nbsp;</p>
+<p>收货时间：</p>
+<p><input name="" type="text" class="spcart_txt"/></p>
+<p>&nbsp;</p>
+<p>收货人：</p>
+<p><input name="" type="text" class="spcart_txt"/></p>
+<p>&nbsp;</p>
+<p>收货电话：</p>
+<p><input name="" type="text" class="spcart_txt"/></p>
+<p>&nbsp;</p>
+<p>付款方式：</p>
+<p><select name="" class="spcart_select">
+    <option>微信支付</option>
+    <option>其他</option>
+    </select></p>
+<p>&nbsp;</p>
+<p>开发票：</p>
+<p><select name="" class="spcart_select">
+    <option>是</option>
+    <option>否</option>
+    </select></p>
+<p>&nbsp;</p>
+<p>备注：</p>
+<p><input name="" type="text" class="spcart_txt"/></p>
+<p>&nbsp;</p>
+<p>总价：<span style="font-size:14px;">￥899</span></p>
+<p>&nbsp;</p>
+ <p><input name="" type="button" class="tjbtn" value="提交订单" /></p>
+<div class="clear" style="height:50px;"></div>
+</div>
+<!-- footer Start-->
+<div class="footer">
+    <div class="tel">
+    	<img src="images/tel.png">
+        蛋糕订购：4000-000-000
+    </div>
+	<div class="bq">版权所有：copyright@mybetababy.com<br/>京ICP备11017824号-4 / 京ICP证130164号
+    </div>
+</div>
+<!-- footer End -->
+</body>
+</html>
